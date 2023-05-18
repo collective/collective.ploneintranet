@@ -1,0 +1,579 @@
+[{
+    "@id": "http://localhost:8080/Plone/images",
+    "@type": "Document",
+    "UID": "4d231736c1a54b03919fac8bbf7f493a",
+    "allow_discussion": false,
+    "blocks": {
+        "3d2f3e4f-baf5-4a04-aa42-6c911cb753b9": {
+            "@type": "search",
+            "query": {
+                "query": [
+                    {
+                        "i": "portal_type",
+                        "o": "plone.app.querystring.operation.selection.any",
+                        "v": [
+                            "Image"
+                        ]
+                    },
+                    {
+                        "i": "path",
+                        "o": "plone.app.querystring.operation.string.relativePath",
+                        "v": "./"
+                    }
+                ],
+                "sort_order": "ascending"
+            },
+            "showSearchInput": true,
+            "showSortOn": true,
+            "showTotalResults": true
+        },
+        "459dd622-a49c-41e3-949c-41e2424959e1": {
+            "@type": "slate"
+        },
+        "8673dc63-8408-4567-8fe8-d75526ff1219": {
+            "@type": "title"
+        },
+        "undefined": {
+            "@type": "search",
+            "listingBodyTemplate": "default",
+            "showSearchInput": true,
+            "showTotalResults": true
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "8673dc63-8408-4567-8fe8-d75526ff1219",
+            "3d2f3e4f-baf5-4a04-aa42-6c911cb753b9",
+            "459dd622-a49c-41e3-949c-41e2424959e1"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-05-18T20:40:09+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "images",
+    "is_folderish": true,
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-05-18T20:40:58+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone",
+        "@type": "Plone Site",
+        "UID": "6d306cbbef5c4899a77ea669b4da00ba",
+        "description": "A Plone Intranet",
+        "title": "Plone Intranet"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "internal",
+    "rights": "",
+    "subjects": [],
+    "title": "Images",
+    "version": "current",
+    "workflow_history": {
+        "intranet_folder_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "internal",
+                "time": "2023-05-18T20:40:09+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+},{
+    "@id": "http://localhost:8080/Plone/images/plone-foundation-logo.png",
+    "@type": "Image",
+    "UID": "a98774abf06e49078f3f206a8b055dc2",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T20:40:37+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "plone-foundation-logo.png",
+    "image": {
+        "blob_path": "blobs/a98774abf06e49078f3f206a8b055dc2-image/plone-foundation-logo.png",
+        "content-type": "image/png",
+        "filename": "plone-foundation-logo.png",
+        "height": 700,
+        "size": 60300,
+        "width": 2000
+    },
+    "is_folderish": false,
+    "language": "",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-05-18T20:40:37+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone/images",
+        "@type": "Document",
+        "UID": "4d231736c1a54b03919fac8bbf7f493a",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "internal",
+        "title": "Images"
+    },
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "title": "plone-foundation-logo.png",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+},{
+    "@id": "http://localhost:8080/Plone/images/volto.png",
+    "@type": "Image",
+    "UID": "f96cfb63b6284c49a49b9dd45e98394b",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T20:40:37+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "volto.png",
+    "image": {
+        "blob_path": "blobs/f96cfb63b6284c49a49b9dd45e98394b-image/image.png",
+        "content-type": "image/png",
+        "filename": "image.png",
+        "height": 1536,
+        "size": 218233,
+        "width": 2048
+    },
+    "is_folderish": false,
+    "language": "",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-05-18T20:40:58+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone/images",
+        "@type": "Document",
+        "UID": "4d231736c1a54b03919fac8bbf7f493a",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "internal",
+        "title": "Images"
+    },
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "title": "Plone 6 with Volto",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+},{
+    "@id": "http://localhost:8080/Plone/news",
+    "@type": "Document",
+    "UID": "2528e1bf4caa4fe7956c5cc31140ff0f",
+    "allow_discussion": false,
+    "blocks": {
+        "1b90ea80-719f-4f70-bcdc-d7b8032c44e0": {
+            "@type": "listing",
+            "headlineTag": "h2",
+            "querystring": {
+                "query": [
+                    {
+                        "i": "portal_type",
+                        "o": "plone.app.querystring.operation.selection.any",
+                        "v": [
+                            "News Item"
+                        ]
+                    }
+                ],
+                "sort_on": "effective",
+                "sort_order": "descending",
+                "sort_order_boolean": true
+            },
+            "variation": "summary"
+        },
+        "d3220f5d-9966-45b7-8c15-fdf6b8693d79": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "d3220f5d-9966-45b7-8c15-fdf6b8693d79",
+            "1b90ea80-719f-4f70-bcdc-d7b8032c44e0"
+        ]
+    },
+    "contributors": [],
+    "created": "2023-05-18T20:34:24+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "Latest news from our organization",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "news",
+    "is_folderish": true,
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-05-18T20:38:05+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone",
+        "@type": "Plone Site",
+        "UID": "6d306cbbef5c4899a77ea669b4da00ba",
+        "description": "A Plone Intranet",
+        "title": "Plone Intranet"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "internal",
+    "rights": "",
+    "subjects": [],
+    "title": "News",
+    "version": "current",
+    "workflow_history": {
+        "intranet_folder_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "internal",
+                "time": "2023-05-18T20:34:24+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+},{
+    "@id": "http://localhost:8080/Plone/news/welcome-to-plone-intranet",
+    "@type": "News Item",
+    "UID": "c98f1f1eceab478097ed7d5ca13e0101",
+    "allow_discussion": false,
+    "blocks": {
+        "35b633f7-c0d7-4f0d-b4af-20b72173555a": {
+            "@type": "title"
+        },
+        "4f380871-66b3-473a-8f9a-85f88d8fdc59": {
+            "@type": "slate",
+            "plaintext": "Reasons to choose Plone for your Intranet",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Reasons to choose Plone for your Intranet"
+                        }
+                    ],
+                    "type": "h3"
+                }
+            ]
+        },
+        "6ded4254-f603-4298-a4a9-ca3e4f497211": {
+            "@type": "slate",
+            "plaintext": " Security: Plone is widely known for its strong security. It is engineered with a focus on security at the core, which makes it an ideal choice for intranets that often require a high degree of security. The default configurations of Plone are inherently secure and regularly audited, which reduces the risk of common vulnerabilities.  Content Management: Plone provides powerful content management features. It allows users to create, manage, and publish content with ease. It also supports versioning, which means changes to the content can be tracked and reverted if necessary.  User Management and Permissions: Plone offers comprehensive user management with fine-grained permission control. This allows administrators to have precise control over who can view, edit, or publish content in different parts of the intranet.  Customizability and Scalability: Plone is highly customizable and can be scaled to fit the needs of both small and large organizations. This makes it a versatile solution that can grow with the organization.  Workflow Management: Plone supports the creation of complex workflow scenarios. This means you can implement approval processes, drafting states, and more, helping you ensure quality and oversight on your intranet content.  Multilingual Support: Plone has built-in support for multiple languages. This is particularly beneficial for multinational corporations or organizations with a diverse user base who need their intranet content in several languages.  Integration Capabilities: Plone can integrate with a wide variety of other systems, including databases, authentication systems, and other third-party services. This flexibility allows you to incorporate the intranet into your existing IT environment seamlessly.  Open Source: Finally, Plone is open source, which means you have the freedom to modify and adapt it to your specific needs. Moreover, it's backed by an active community that continuously works on updates, patches, and improvements.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Security:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone is widely known for its strong security. It is engineered with a focus on security at the core, which makes it an ideal choice for intranets that often require a high degree of security. The default configurations of Plone are inherently secure and regularly audited, which reduces the risk of common vulnerabilities."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Content Management:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone provides powerful content management features. It allows users to create, manage, and publish content with ease. It also supports versioning, which means changes to the content can be tracked and reverted if necessary."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "User Management and Permissions:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone offers comprehensive user management with fine-grained permission control. This allows administrators to have precise control over who can view, edit, or publish content in different parts of the intranet."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Customizability and Scalability:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone is highly customizable and can be scaled to fit the needs of both small and large organizations. This makes it a versatile solution that can grow with the organization."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Workflow Management:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone supports the creation of complex workflow scenarios. This means you can implement approval processes, drafting states, and more, helping you ensure quality and oversight on your intranet content."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Multilingual Support:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone has built-in support for multiple languages. This is particularly beneficial for multinational corporations or organizations with a diverse user base who need their intranet content in several languages."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Integration Capabilities:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Plone can integrate with a wide variety of other systems, including databases, authentication systems, and other third-party services. This flexibility allows you to incorporate the intranet into your existing IT environment seamlessly."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "text": ""
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "text": "Open Source:"
+                                                }
+                                            ],
+                                            "type": "strong"
+                                        },
+                                        {
+                                            "text": " Finally, Plone is open source, which means you have the freedom to modify and adapt it to your specific needs. Moreover, it's backed by an active community that continuously works on updates, patches, and improvements."
+                                        }
+                                    ],
+                                    "type": "p"
+                                }
+                            ],
+                            "type": "li"
+                        }
+                    ],
+                    "type": "ol"
+                }
+            ]
+        },
+        "aec4f3f4-1549-41d3-bf6f-ec995fb142dc": {
+            "@type": "slate",
+            "plaintext": "This is an example news item for the Plone Intranet distribution, developed by the Plone Community.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "This is an example news item for the Plone Intranet distribution, developed by the Plone Community."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "b2764eb5-8e9e-43f0-8d30-4d5c72ddbc35": {
+            "@type": "image",
+            "align": "right",
+            "alt": "",
+            "size": "s",
+            "url": "http://localhost:8080/Plone/images/volto.png"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "b2764eb5-8e9e-43f0-8d30-4d5c72ddbc35",
+            "35b633f7-c0d7-4f0d-b4af-20b72173555a",
+            "aec4f3f4-1549-41d3-bf6f-ec995fb142dc",
+            "4f380871-66b3-473a-8f9a-85f88d8fdc59",
+            "6ded4254-f603-4298-a4a9-ca3e4f497211"
+        ]
+    },
+    "changeNote": "",
+    "contributors": [],
+    "created": "2023-05-18T20:37:51+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "This is an example news item for the Plone Intranet distribution.",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "welcome-to-plone-intranet",
+    "image": {
+        "blob_path": "blobs/c98f1f1eceab478097ed7d5ca13e0101-image/image.png",
+        "content-type": "image/png",
+        "filename": "image.png",
+        "height": 1536,
+        "size": 218233,
+        "width": 2048
+    },
+    "image_caption": "A Plone 6 site with Volto",
+    "is_folderish": true,
+    "layout": "newsitem_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2023-05-18T20:43:07+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone/news",
+        "@type": "Document",
+        "UID": "2528e1bf4caa4fe7956c5cc31140ff0f",
+        "description": "Latest news from our organization",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "internal",
+        "title": "News"
+    },
+    "review_state": "internal",
+    "rights": "",
+    "subjects": [
+        "Plone",
+        "Intranet"
+    ],
+    "title": "Welcome to Plone Intranet",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+        "intranet_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "internal",
+                "time": "2023-05-18T20:37:51+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}]

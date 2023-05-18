@@ -1,0 +1,70 @@
+#--- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+#SOME DESCRIPTIVE TITLE.
+#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-05-18 21:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.ploneintranet\n"
+
+#: collective/ploneintranet/profiles.zcml:29
+msgid "OAuth Support for Plone Intranet"
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:13
+msgid "Plone Intranet: Install"
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:29
+msgid "Plone Intranet: OAuth Support"
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:37
+msgid "Plone Intranet: Uninstall"
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:21
+msgid "Plone Intranet: Volto Support"
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:13
+msgid "Policy package to install our site"
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:37
+msgid "Uninstall Plone Intranet setup."
+msgstr ""
+
+#: collective/ploneintranet/profiles.zcml:21
+msgid "Volto Support for Plone Intranet"
+msgstr ""
+
+#. Default: "GitHub Username"
+#: collective/ploneintranet/profiles/default/userschema.xml
+msgid "help_github_username"
+msgstr ""
+
+#. Default: "Portrait URL"
+#: collective/ploneintranet/profiles/default/userschema.xml
+msgid "help_portrait"
+msgstr ""
+
+#. Default: "GitHub Username"
+#: collective/ploneintranet/profiles/default/userschema.xml
+msgid "label_github_username"
+msgstr ""
+
+#. Default: "Portrait URL"
+#: collective/ploneintranet/profiles/default/userschema.xml
+msgid "label_portrait"
+msgstr ""

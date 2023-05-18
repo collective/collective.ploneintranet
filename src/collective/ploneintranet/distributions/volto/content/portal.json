@@ -1,0 +1,58 @@
+[{
+    "@id": "http://localhost:8080/Plone",
+    "@type": "Plone Site",
+    "UID": "6d306cbbef5c4899a77ea669b4da00ba",
+    "allow_discussion": null,
+    "blocks": {
+        "29a6a70d-321a-4747-99a0-a18267c79a87": {
+            "@type": "image",
+            "alt": "",
+            "url": "http://localhost:8080/Plone/images/plone-foundation-logo.png"
+        },
+        "eab787b8-a407-4037-b904-57658f303600": {
+            "@type": "slate",
+            "plaintext": "This is the default content for your newly created intranet.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "This is the default content for your newly created intranet."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "ee5f9d88-c59e-457e-bab5-7b3e46f954b1": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "ee5f9d88-c59e-457e-bab5-7b3e46f954b1",
+            "eab787b8-a407-4037-b904-57658f303600",
+            "29a6a70d-321a-4747-99a0-a18267c79a87"
+        ]
+    },
+    "contributors": [],
+    "creators": [
+        "admin"
+    ],
+    "description": "A Plone Intranet",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "Plone",
+    "is_folderish": true,
+    "items_total": 2,
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "parent": {},
+    "review_state": "internal",
+    "rights": "",
+    "subjects": [],
+    "table_of_contents": null,
+    "title": "Plone Intranet"
+}]

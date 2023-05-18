@@ -1,0 +1,11 @@
+.coverage
+bin/
+include/
+instance/
+lib/
+lib64/
+pip-selfcheck.json
+.pytest_cache
+*/__pycache__/
+pyvenv.cfg
+*-mxdev.txt

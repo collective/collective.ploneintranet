@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.ploneintranet"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Plone Intranet: Install"
+      description="Policy package to install our site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="volto"
+      title="Plone Intranet: Volto Support"
+      description="Volto Support for Plone Intranet"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/volto"
+      />
+
+  <genericsetup:registerProfile
+      name="oauth"
+      title="Plone Intranet: OAuth Support"
+      description="OAuth Support for Plone Intranet"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/oauth"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Plone Intranet: Uninstall"
+      description="Uninstall Plone Intranet setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <include package=".upgrades" />
+
+</configure>
