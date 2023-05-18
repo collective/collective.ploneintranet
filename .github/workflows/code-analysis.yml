@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run check
-        uses: plone/code-analysis-action@v2
+        uses: plone/code-analysis-action@v2.1
         with:
           check: 'black'
 
@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run check
-        uses: plone/code-analysis-action@v2
+        uses: plone/code-analysis-action@v2.1
         with:
           check: 'flake8'
 
@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run check
-        uses: plone/code-analysis-action@v2
+        uses: plone/code-analysis-action@v2.1
         with:
           check: 'isort'
 
@@ -50,7 +50,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run check
-        uses: plone/code-analysis-action@v2
+        uses: plone/code-analysis-action@v2.1
         with:
           check: 'pyroma'
 
@@ -63,6 +63,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run check
-        uses: plone/code-analysis-action@v2
+        uses: plone/code-analysis-action@v2.1
         with:
           check: 'zpretty'
