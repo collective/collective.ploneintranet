@@ -7,6 +7,7 @@ exclude *-mxdev.txt
 exclude Dockerfile
 exclude mx.ini
 exclude Makefile
+exclude frontend
 exclude instance.yaml
 global-exclude *.pyc
 global-exclude .DS_Store

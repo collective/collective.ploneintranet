@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "volto-ploneintranet": [
+                "addons/volto-ploneintranet/src"
+            ]
+        },
+        "baseUrl": "src"
+    }
+}
