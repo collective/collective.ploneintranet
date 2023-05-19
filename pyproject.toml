@@ -1,5 +1,5 @@
 [tool.pytest.ini_options]
-addopts = "--cov-report term --cov=collective.ploneintranet"
+addopts = "--cov-report term-missing --cov=collective.ploneintranet"
 testpaths = [
     "tests",
 ]
