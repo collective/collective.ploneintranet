@@ -72,6 +72,13 @@ def post_handler(
     # Update security
     wf_tool = api.portal.get_tool("portal_workflow")
     wf_tool.updateRoleMappings()
+    # enable_discussion
+    enable_discussion = answers.get("enable_discussion", False)
+    api.portal.set_registry_record(
+        "plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled",
+        enable_discussion,
+    )
+
     # Process answers
     profiles = distribution.profiles
     authentication = answers.get("authentication", "Plone")

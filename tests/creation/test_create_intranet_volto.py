@@ -21,6 +21,7 @@ class TestPloneAuth:
             "default_language": "en",
             "portal_timezone": "America/Sao_Paulo",
             "setup_content": True,
+            "enable_discussion": True,
             "authentication": "Plone",
         }
         with api.env.adopt_roles(["Manager"]):
@@ -71,6 +72,12 @@ class TestPloneAuth:
         with api.env.adopt_user(user=nobody):
             user = api.user.get_current()
             assert api.user.has_permission(permission, user=user, obj=site) is expected
+
+    def test_comments_enabled(self):
+        value = api.portal.get_registry_record(
+            "plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled"
+        )
+        assert value is True
 
 
 class TestPloneGitHub:
@@ -123,6 +130,7 @@ class TestPloneGoogle:
             "default_language": "en",
             "portal_timezone": "America/Sao_Paulo",
             "setup_content": True,
+            "enable_discussion": False,
             "authentication": "Google",
             "consumer_key": "foo",
             "consumer_secret": "bar",

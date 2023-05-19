@@ -2,5 +2,6 @@
 <metadata>
   <version>20230518001</version>
   <dependencies>
-</dependencies>
+    <dependency>profile-collective.glossary:default</dependency>
+  </dependencies>
 </metadata>

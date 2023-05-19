@@ -34,6 +34,12 @@
           "GitHub Authentication"
         ]
       },
+      "enable_discussion": {
+        "type": "boolean",
+        "title": "Enable commenting on contents?",
+        "description": "Should we allow users to comment on contents?",
+        "default": false
+      },
       "setup_content": {
         "type": "boolean",
         "title": "Add Example Content?",

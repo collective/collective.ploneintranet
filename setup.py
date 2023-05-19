@@ -54,6 +54,7 @@ setup(
         "plone.distribution",
         "plone.api",
         "pas.plugins.authomatic",
+        "collective.glossary",
     ],
     extras_require={
         "test": [

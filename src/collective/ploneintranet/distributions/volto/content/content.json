@@ -1,4 +1,89 @@
 [{
+    "@id": "http://localhost:8080/Plone/glossary",
+    "@type": "Glossary",
+    "UID": "1b7868952b5d4c14b57edcad0e29a374",
+    "allow_discussion": false,
+    "created": "2023-05-19T11:30:29+00:00",
+    "description": "Terms used in the Intranet",
+    "exclude_from_nav": false,
+    "id": "glossary",
+    "is_folderish": true,
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-05-19T11:32:13+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone",
+        "@type": "Plone Site",
+        "UID": "6d306cbbef5c4899a77ea669b4da00ba",
+        "description": "A Plone Intranet",
+        "title": "Plone Intranet"
+    },
+    "review_state": "internal",
+    "text": null,
+    "title": "Glossary",
+    "version": "current",
+    "workflow_history": {
+        "intranet_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "internal",
+                "time": "2023-05-19T11:30:29+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+},{
+    "@id": "http://localhost:8080/Plone/glossary/plone-1",
+    "@type": "Term",
+    "UID": "0c78d7476a264901b69ec348daaf1af6",
+    "allow_discussion": false,
+    "created": "2023-05-19T11:32:13+00:00",
+    "definition": {
+        "content-type": "text/html",
+        "data": "<p><span class=\"\">Plone is the leading open-source content management system (CMS) and a web application framework. It provides an intuitive interface for managing digital content, such as websites, intranets, and collaborative platforms.</span></p>",
+        "encoding": "utf8"
+    },
+    "description": "",
+    "id": "plone-1",
+    "image": null,
+    "is_folderish": false,
+    "layout": "view",
+    "lock": {},
+    "modified": "2023-05-19T11:32:13+00:00",
+    "parent": {
+        "@id": "http://localhost:8080/Plone/glossary",
+        "@type": "Glossary",
+        "UID": "1b7868952b5d4c14b57edcad0e29a374",
+        "description": "Terms used in the Intranet",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "internal",
+        "title": "Glossary"
+    },
+    "review_state": "internal",
+    "title": "Plone",
+    "variants": [
+        "CMFPlone",
+        "Plone CMS"
+    ],
+    "version": "current",
+    "workflow_history": {
+        "intranet_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "internal",
+                "time": "2023-05-19T11:32:13+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+},{
     "@id": "http://localhost:8080/Plone/images",
     "@type": "Document",
     "UID": "4d231736c1a54b03919fac8bbf7f493a",
@@ -63,7 +148,7 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-05-18T20:40:58+00:00",
+    "modified": "2023-05-19T11:29:41+00:00",
     "parent": {
         "@id": "http://localhost:8080/Plone",
         "@type": "Plone Site",
@@ -115,7 +200,6 @@
         "width": 2000
     },
     "is_folderish": false,
-    "language": "",
     "layout": "image_view",
     "lock": {},
     "modified": "2023-05-18T20:40:37+00:00",
@@ -160,7 +244,6 @@
         "width": 2048
     },
     "is_folderish": false,
-    "language": "",
     "layout": "image_view",
     "lock": {},
     "modified": "2023-05-18T20:40:58+00:00",
@@ -232,7 +315,7 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-05-18T20:38:05+00:00",
+    "modified": "2023-05-19T11:29:42+00:00",
     "parent": {
         "@id": "http://localhost:8080/Plone",
         "@type": "Plone Site",
