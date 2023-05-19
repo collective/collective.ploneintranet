@@ -6,6 +6,8 @@ on: [push]
 env:
   PYTHON_VERSION: "3.11"
   PLONE_VERSION: "6.0-latest"
+  IMAGE_NAME_PREFIX: ghcr.io/collective/plone-intranet
+  IMAGE_NAME_SUFFIX: backend
 
 jobs:
   tests:
@@ -49,9 +51,9 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/collective/plone-intranet-backend
+            ${{ env.IMAGE_NAME_PREFIX }}-${{ env.IMAGE_NAME_SUFFIX }}
           labels: |
-            org.label-schema.docker.cmd=docker run -d -p 8080:8080 ghcr.io/collective/plone-intranet-backend:latest
+            org.label-schema.docker.cmd=docker run -d -p 8080:8080 ${{ env.IMAGE_NAME_PREFIX }}-${{ env.IMAGE_NAME_SUFFIX }}:latest
           flavor:
             latest=false
           tags: |
