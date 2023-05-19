@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0a2 (2023-05-19)
+
+
+### Bug fixes:
+
+- Fix GHA Docker image release process [@ericof] #2
+
+
 ## 1.0.0a1 (2023-05-19)
 
 
