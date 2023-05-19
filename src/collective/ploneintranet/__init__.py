@@ -4,6 +4,8 @@ from zope.i18nmessageid import MessageFactory
 import logging
 
 
-_ = MessageFactory("collective.ploneintranet")
+PACKAGE_NAME = "collective.ploneintranet"
 
-logger = logging.getLogger("collective.ploneintranet")
+_ = MessageFactory(PACKAGE_NAME)
+
+logger = logging.getLogger(PACKAGE_NAME)

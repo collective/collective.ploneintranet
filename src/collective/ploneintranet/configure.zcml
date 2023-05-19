@@ -20,5 +20,6 @@
   <include file="distributions.zcml" />
 
   <include file="profiles.zcml" />
+  <include package=".subscribers" />
 
 </configure>

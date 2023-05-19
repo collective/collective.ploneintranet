@@ -128,7 +128,8 @@
       "consumer_key",
       "consumer_secret",
       "auth_scope",
-      "setup_content"
+      "setup_content",
+      "enable_discussion"
      ]
   }
 }

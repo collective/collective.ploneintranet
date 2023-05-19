@@ -7,7 +7,7 @@
         "29a6a70d-321a-4747-99a0-a18267c79a87": {
             "@type": "image",
             "alt": "",
-            "url": "http://localhost:8080/Plone/images/plone-foundation-logo.png"
+            "url": "images/plone-foundation-logo.png"
         },
         "eab787b8-a407-4037-b904-57658f303600": {
             "@type": "slate",
