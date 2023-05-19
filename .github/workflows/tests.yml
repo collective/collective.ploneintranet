@@ -8,6 +8,7 @@ env:
   PLONE_VERSION: "6.0-latest"
   IMAGE_NAME_PREFIX: ghcr.io/collective/plone-intranet
   IMAGE_NAME_SUFFIX: backend
+  IMAGE_PLATFORMS: linux/amd64,linux/arm64
 
 jobs:
   tests:
@@ -77,7 +78,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-          platforms: linux/amd64
+          platforms: ${{ env.IMAGE_PLATFORMS }}
           context: .
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}

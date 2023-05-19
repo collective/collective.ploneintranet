@@ -51,17 +51,44 @@ The "Plone Intranet (Volto UI)" comes with the following content:
 * **/images/**: Image bank with faceted navigation for images.
 * **/news/**: Listing of News Items available on the Intranet.
 
-## Installation
+## Using
 
 ## Docker Image
 
+In your computer, create a new folder (i.e. `Intranet`) and copy the example [docker-compose.yml](./docker-compose.yml) into it:
+
 ```shell
-docker run --rm -it -p 8080:8080 ghcr.io/collective/plone-intranet-backend: latest
+mkdir Intranet
+cd Intranet
+curl https://raw.githubusercontent.com/collective/collective.ploneintranet/main/docker-compose.yml --output docker-compose.yml
 ```
+
+Then start the stack with:
+
+```shell
+docker compose up -d
+```
+
+This command starts three containers:
+
+* webserver: A Traefik router that acts as an ingress to this stack.
+* frontend: Volto frontend for the intranet.
+* backend: The Plone Intranet backend.
+
+### Create the Intranet
+
+To create the Plone site on the backend, visit the url: [http://intranet-admin.localhost](http://intranet-admin.localhost) and add a new Plone Intranet.
+
+Please, keep the site_id as **Plone**, as the frontend container expects that value.
+
+To test the GitHub authentication use the following values:
+
+* consumer_key: **ee86d42b5c4bc4987818**
+* consumer_secret: **6f3a390401470b26c847e0d7832bacec7f214a1c**
 
 ## In an existing Plone project
 
-Add **collective.ploneintranet** as a dependency
+Add **collective.ploneintranet** as a dependency of your project.
 
 ## Contribute
 
