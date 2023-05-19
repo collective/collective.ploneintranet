@@ -12,7 +12,6 @@ env:
 
 jobs:
   meta:
-    if: github.ref_type == 'branch'
     runs-on: ubuntu-latest
     outputs:
       VOLTO_VERSION: ${{ steps.vars.outputs.VOLTO_VERSION }}
