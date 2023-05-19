@@ -8,3 +8,10 @@
 -->
 
 <!-- towncrier release notes start -->
+
+## 1.0.0a1 (2023-05-19)
+
+
+### New features:
+
+- Initial release. [ericof] #1
