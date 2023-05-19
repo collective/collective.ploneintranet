@@ -9,6 +9,7 @@ COPY --chown=node:node jsconfig.json /app/
 COPY --chown=node:node src/addons/ /app/src/addons/
 
 RUN <<EOT
+    set -e
     /setupAddon
     yarn install --network-timeout 1000000
     yarn build
