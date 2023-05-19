@@ -15,7 +15,7 @@ GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
-PLONE6=6.0-latest
+PLONE_VERSION=6
 
 # Python checks
 PYTHON?=python3
@@ -34,7 +34,10 @@ endif
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
-CODE_QUALITY_VERSION=2.1.0
+IMAGE_NAME=ghcr.io/collective/plone-intranet-backend
+IMAGE_TAG=latest
+
+CODE_QUALITY_VERSION=2.1
 ifndef LOG_LEVEL
 	LOG_LEVEL=INFO
 endif
@@ -127,3 +130,12 @@ i18n: bin/i18ndude ## Update locales
 .PHONY: test
 test: ## run tests
 	bin/pytest --disable-warnings
+
+# Docker image
+.PHONY: build-image
+build-image:  ## Build Docker Image
+	@DOCKER_BUILDKIT=1 docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg PLONE_VERSION=$(PLONE_VERSION)
+
+.PHONY: run-image
+run-image:  build-image  ## Build Docker Image
+	docker run --rm -it -p 8080:8080 $(IMAGE_NAME):$(IMAGE_TAG)
