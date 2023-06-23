@@ -20,7 +20,7 @@ FROM plone/server-prod-config:${PLONE_VERSION}
 
 LABEL maintainer="Plone Collective <collective@plone.org>" \
       org.label-schema.name="collective/plone-intranet:backend" \
-      org.label-schema.description="Plone Intranet distribtuion backend." \
+      org.label-schema.description="Plone Intranet distribution backend." \
       org.label-schema.vendor="Plone Foundation"
 
 # Disable MO Compilation

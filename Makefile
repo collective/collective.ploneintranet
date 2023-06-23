@@ -37,14 +37,8 @@ BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 IMAGE_NAME=ghcr.io/collective/plone-intranet-backend
 IMAGE_TAG=latest
 
-CODE_QUALITY_VERSION=2.1
-ifndef LOG_LEVEL
-	LOG_LEVEL=INFO
-endif
-CURRENT_USER=$$(whoami)
-USER_INFO=$$(id -u ${CURRENT_USER}):$$(getent group ${CURRENT_USER}|cut -d: -f3)
-LINT=docker run --rm -e LOG_LEVEL="${LOG_LEVEL}" -v "${BACKEND_FOLDER}":/github/workspace plone/code-quality:${CODE_QUALITY_VERSION} check
-FORMAT=docker run --rm --user="${USER_INFO}" -e LOG_LEVEL="${LOG_LEVEL}" -v "${BACKEND_FOLDER}":/github/workspace plone/code-quality:${CODE_QUALITY_VERSION} format
+# Set distributions still in development
+DISTRIBUTIONS="intranet-volto"
 
 all: build
 
@@ -54,10 +48,11 @@ all: build
 help: ## This help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-bin/pip:
+bin/pip bin/tox bin/mxdev:
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	$(PYTHON) -m venv .
-	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev"
+	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev" "tox" "pre-commit"
+	bin/pre-commit install
 
 .PHONY: config
 config: bin/pip  ## Create instance configuration
@@ -77,44 +72,27 @@ install: build-dev ## Install Plone 6.0
 .PHONY: build
 build: build-dev ## Install Plone 6.0
 
-
 .PHONY: clean
 clean: ## Remove old virtualenv and creates a new one
 	@echo "$(RED)==> Cleaning environment and build$(RESET)"
-	rm -rf bin lib lib64 include share etc var inituser pyvenv.cfg .installed.cfg instance
+	rm -rf bin lib lib64 include share etc var inituser pyvenv.cfg .installed.cfg instance .tox .pytest_cache
 
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080
-	PYTHONWARNINGS=ignore ./bin/runwsgi instance/etc/zope.ini
+	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) PYTHONWARNINGS=ignore ./bin/runwsgi instance/etc/zope.ini
+
+.PHONY: console
+console: ## Start a zope console
+	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) PYTHONWARNINGS=ignore ./bin/zconsole debug instance/etc/zope.conf
 
 .PHONY: format
-format: ## Format the codebase according to our standards
+format: bin/tox ## Format the codebase according to our standards
 	@echo "$(GREEN)==> Format codebase$(RESET)"
-	$(FORMAT)
+	bin/tox -e format
 
 .PHONY: lint
 lint: ## check code style
-	$(LINT)
-
-.PHONY: lint-black
-lint-black: ## validate black formating
-	$(LINT) black
-
-.PHONY: lint-flake8
-lint-flake8: ## validate black formating
-	$(LINT) flake8
-
-.PHONY: lint-isort
-lint-isort: ## validate using isort
-	$(LINT) isort
-
-.PHONY: lint-pyroma
-lint-pyroma: ## validate using pyroma
-	$(LINT) pyroma
-
-.PHONY: lint-zpretty
-lint-zpretty: ## validate ZCML/XML using zpretty
-	$(LINT) zpretty
+	bin/tox -e lint
 
 # i18n
 bin/i18ndude: bin/pip
@@ -128,8 +106,12 @@ i18n: bin/i18ndude ## Update locales
 
 # Tests
 .PHONY: test
-test: ## run tests
-	bin/pytest --disable-warnings
+test: bin/tox ## run tests
+	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) bin/tox -e test
+
+.PHONY: test-coverage
+test-coverage: bin/tox ## run tests with coverage
+	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) bin/tox -e coverage
 
 # Docker image
 .PHONY: build-image
