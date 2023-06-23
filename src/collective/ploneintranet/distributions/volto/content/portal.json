@@ -1,5 +1,5 @@
 [{
-    "@id": "/",
+    "@id": "/Plone",
     "@type": "Plone Site",
     "UID": "6d306cbbef5c4899a77ea669b4da00ba",
     "allow_discussion": null,
