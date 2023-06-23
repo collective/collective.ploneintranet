@@ -52,7 +52,7 @@ setup(
         "setuptools",
         "Plone",
         "Products.PluggableAuthService",
-        "plone.distribution",
+        "plone.distribution>=1.0.0a6",
         "plone.api",
         "pas.plugins.authomatic",
         "collective.glossary",
