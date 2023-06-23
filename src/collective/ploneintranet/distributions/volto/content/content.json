@@ -1,5 +1,5 @@
 [{
-    "@id": "http://localhost:8080/Plone/glossary",
+    "@id": "/glossary",
     "@type": "Glossary",
     "UID": "1b7868952b5d4c14b57edcad0e29a374",
     "allow_discussion": false,
@@ -10,17 +10,19 @@
     "is_folderish": true,
     "layout": "view",
     "lock": {},
-    "modified": "2023-05-19T11:32:13+00:00",
+    "modified": "2023-06-23T22:54:12+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone",
+        "@id": "/",
         "@type": "Plone Site",
         "UID": "6d306cbbef5c4899a77ea669b4da00ba",
         "description": "A Plone Intranet",
-        "title": "Plone Intranet"
+        "title": "Plone Intranet",
+        "type_title": "Plone Site"
     },
     "review_state": "internal",
     "text": null,
     "title": "Glossary",
+    "type_title": "Glossary",
     "version": "current",
     "workflow_history": {
         "intranet_workflow": [
@@ -36,7 +38,7 @@
     "working_copy": null,
     "working_copy_of": null
 },{
-    "@id": "http://localhost:8080/Plone/glossary/plone-1",
+    "@id": "/glossary/plone-1",
     "@type": "Term",
     "UID": "0c78d7476a264901b69ec348daaf1af6",
     "allow_discussion": false,
@@ -54,17 +56,19 @@
     "lock": {},
     "modified": "2023-05-19T11:32:13+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone/glossary",
+        "@id": "/glossary",
         "@type": "Glossary",
         "UID": "1b7868952b5d4c14b57edcad0e29a374",
         "description": "Terms used in the Intranet",
         "image_field": null,
         "image_scales": null,
         "review_state": "internal",
-        "title": "Glossary"
+        "title": "Glossary",
+        "type_title": "Glossary"
     },
     "review_state": "internal",
     "title": "Plone",
+    "type_title": "Term",
     "variants": [
         "CMFPlone",
         "Plone CMS"
@@ -84,7 +88,7 @@
     "working_copy": null,
     "working_copy_of": null
 },{
-    "@id": "http://localhost:8080/Plone/images",
+    "@id": "/images",
     "@type": "Document",
     "UID": "4d231736c1a54b03919fac8bbf7f493a",
     "allow_discussion": false,
@@ -143,18 +147,20 @@
     "expires": null,
     "id": "images",
     "is_folderish": true,
+    "language": "en-us",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-05-19T11:29:41+00:00",
+    "modified": "2023-06-23T22:54:13+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone",
+        "@id": "/",
         "@type": "Plone Site",
         "UID": "6d306cbbef5c4899a77ea669b4da00ba",
         "description": "A Plone Intranet",
-        "title": "Plone Intranet"
+        "title": "Plone Intranet",
+        "type_title": "Plone Site"
     },
     "preview_caption": null,
     "preview_image": null,
@@ -162,6 +168,7 @@
     "rights": "",
     "subjects": [],
     "title": "Images",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "intranet_folder_workflow": [
@@ -177,7 +184,54 @@
     "working_copy": null,
     "working_copy_of": null
 },{
-    "@id": "http://localhost:8080/Plone/images/plone-foundation-logo.png",
+    "@id": "/images/2022-ploneconf.jpg",
+    "@type": "Image",
+    "UID": "cf9fda61c8504382a8b29867d7da4a13",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-06-23T20:01:43+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "2022-ploneconf.jpg",
+    "image": {
+        "blob_path": "blobs/cf9fda61c8504382a8b29867d7da4a13-image/2022-ploneconf.jpg",
+        "content-type": "image/jpeg",
+        "filename": "2022-ploneconf.jpg",
+        "height": 3158,
+        "size": 5922495,
+        "width": 5697
+    },
+    "is_folderish": false,
+    "language": "en-us",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-06-23T20:01:43+00:00",
+    "parent": {
+        "@id": "/images",
+        "@type": "Document",
+        "UID": "4d231736c1a54b03919fac8bbf7f493a",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "internal",
+        "title": "Images",
+        "type_title": "Page"
+    },
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "title": "2022-ploneconf.jpg",
+    "type_title": "Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+},{
+    "@id": "/images/plone-foundation-logo.png",
     "@type": "Image",
     "UID": "a98774abf06e49078f3f206a8b055dc2",
     "allow_discussion": false,
@@ -200,28 +254,31 @@
         "width": 2000
     },
     "is_folderish": false,
+    "language": "en-us",
     "layout": "image_view",
     "lock": {},
     "modified": "2023-05-18T20:40:37+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone/images",
+        "@id": "/images",
         "@type": "Document",
         "UID": "4d231736c1a54b03919fac8bbf7f493a",
         "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "internal",
-        "title": "Images"
+        "title": "Images",
+        "type_title": "Page"
     },
     "review_state": null,
     "rights": "",
     "subjects": [],
     "title": "plone-foundation-logo.png",
+    "type_title": "Image",
     "version": "current",
     "working_copy": null,
     "working_copy_of": null
 },{
-    "@id": "http://localhost:8080/Plone/images/volto.png",
+    "@id": "/images/volto.png",
     "@type": "Image",
     "UID": "f96cfb63b6284c49a49b9dd45e98394b",
     "allow_discussion": false,
@@ -244,28 +301,31 @@
         "width": 2048
     },
     "is_folderish": false,
+    "language": "en-us",
     "layout": "image_view",
     "lock": {},
     "modified": "2023-05-18T20:40:58+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone/images",
+        "@id": "/images",
         "@type": "Document",
         "UID": "4d231736c1a54b03919fac8bbf7f493a",
         "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "internal",
-        "title": "Images"
+        "title": "Images",
+        "type_title": "Page"
     },
     "review_state": null,
     "rights": "",
     "subjects": [],
     "title": "Plone 6 with Volto",
+    "type_title": "Image",
     "version": "current",
     "working_copy": null,
     "working_copy_of": null
 },{
-    "@id": "http://localhost:8080/Plone/news",
+    "@id": "/news",
     "@type": "Document",
     "UID": "2528e1bf4caa4fe7956c5cc31140ff0f",
     "allow_discussion": false,
@@ -310,18 +370,20 @@
     "expires": null,
     "id": "news",
     "is_folderish": true,
+    "language": "en-us",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-05-19T11:29:42+00:00",
+    "modified": "2023-06-23T22:54:12+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone",
+        "@id": "/",
         "@type": "Plone Site",
         "UID": "6d306cbbef5c4899a77ea669b4da00ba",
         "description": "A Plone Intranet",
-        "title": "Plone Intranet"
+        "title": "Plone Intranet",
+        "type_title": "Plone Site"
     },
     "preview_caption": null,
     "preview_image": null,
@@ -329,6 +391,7 @@
     "rights": "",
     "subjects": [],
     "title": "News",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "intranet_folder_workflow": [
@@ -344,7 +407,7 @@
     "working_copy": null,
     "working_copy_of": null
 },{
-    "@id": "http://localhost:8080/Plone/news/welcome-to-plone-intranet",
+    "@id": "/news/welcome-to-plone-intranet",
     "@type": "News Item",
     "UID": "c98f1f1eceab478097ed7d5ca13e0101",
     "allow_discussion": false,
@@ -588,7 +651,7 @@
             "align": "right",
             "alt": "",
             "size": "s",
-            "url": "http://localhost:8080/Plone/images/volto.png"
+            "url": "/images/volto.png"
         }
     },
     "blocks_layout": {
@@ -621,6 +684,7 @@
     },
     "image_caption": "A Plone 6 site with Volto",
     "is_folderish": true,
+    "language": "en-us",
     "layout": "newsitem_view",
     "lock": {
         "locked": false,
@@ -628,14 +692,15 @@
     },
     "modified": "2023-05-18T20:43:07+00:00",
     "parent": {
-        "@id": "http://localhost:8080/Plone/news",
+        "@id": "/news",
         "@type": "Document",
         "UID": "2528e1bf4caa4fe7956c5cc31140ff0f",
         "description": "Latest news from our organization",
         "image_field": null,
         "image_scales": null,
         "review_state": "internal",
-        "title": "News"
+        "title": "News",
+        "type_title": "Page"
     },
     "review_state": "internal",
     "rights": "",
@@ -644,6 +709,7 @@
         "Intranet"
     ],
     "title": "Welcome to Plone Intranet",
+    "type_title": "News Item",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {
