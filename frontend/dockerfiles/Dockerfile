@@ -20,7 +20,7 @@ FROM plone/frontend-prod-config:${VOLTO_VERSION}
 
 LABEL maintainer="Plone Collective <collective@plone.org>" \
       org.label-schema.name="ghcr.io/collective/plone-intranet-backend" \
-      org.label-schema.description="Plone Intranet distribtuion frontend." \
+      org.label-schema.description="Plone Intranet distribution frontend." \
       org.label-schema.vendor="Plone Foundation"
 
 COPY --from=builder /app/ /app/

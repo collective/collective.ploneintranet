@@ -9,7 +9,6 @@ import collective.ploneintranet
 
 
 class PLONEINTRANETLayer(PloneSandboxLayer):
-
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):

@@ -9,7 +9,6 @@ DISTRIBUTION_NAME = "intranet-volto"
 
 
 class TestDistributionRegistration:
-
     distribution: Distribution = None
 
     @pytest.fixture(autouse=True)

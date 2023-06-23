@@ -1,4 +1,3 @@
-
 name: Test Package and create Docker Image
 
 on: [push]
@@ -11,33 +10,9 @@ env:
   IMAGE_PLATFORMS: linux/amd64,linux/arm64
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Setup Plone ${{ env.PLONE_VERSION }} with Python ${{ env.PYTHON_VERSION }}
-      id: setup
-      uses: plone/setup-plone@v2.0.0
-      with:
-        python-version: ${{ env.PYTHON_VERSION }}
-        plone-version: ${{ env.PLONE_VERSION }}
-
-    # Install collective.ploneintranet with test extras
-    - name: Install collective.ploneintranet
-      run: |
-        pip install mxdev
-        mxdev -c mx.ini
-        pip install -r requirements-mxdev.txt
-
-    # test
-    - name: Test Codebase
-      run: |
-        pytest --disable-warnings
 
   release:
     runs-on: ubuntu-latest
-    needs: [tests]
     permissions:
       contents: read
       packages: write

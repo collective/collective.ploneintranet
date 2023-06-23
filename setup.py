@@ -51,6 +51,7 @@ setup(
     install_requires=[
         "setuptools",
         "Plone",
+        "Products.PluggableAuthService",
         "plone.distribution",
         "plone.api",
         "pas.plugins.authomatic",
